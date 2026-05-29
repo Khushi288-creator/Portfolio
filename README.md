@@ -2,9 +2,9 @@
 
 # 🚀 Khushi Trivedi — Portfolio Website
 
-**Full Stack Developer | React · TypeScript · Node.js · Prisma ORM**
+**Full Stack Developer | React · Node.js · Prisma ORM · MongoDB**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-purple?style=for-the-badge&logo=vercel)](https://khushi-portfolio.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-purple?style=for-the-badge&logo=vercel)](https://khushi-trivedi-portfolio.vercel.app)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com)
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev)
@@ -15,7 +15,7 @@
 
 ## 📸 Screenshots
 
-> Add screenshots here after deployment
+> Screenshots will be added after deployment
 
 ---
 
@@ -43,31 +43,39 @@
 ## 🚀 Installation & Setup
 
 ### Prerequisites
-- Node.js 18+ installed
-- npm or yarn
+
+Make sure you have these installed before starting:
+
+- **Node.js 18+** — Download from [nodejs.org](https://nodejs.org)
+- **npm** — Comes with Node.js automatically
+- **Git** — Download from [git-scm.com](https://git-scm.com)
 
 ### Steps
 
 **1. Clone the repository:**
 ```bash
 git clone https://github.com/Khushi288-creator/portfolio.git
+```
+
+**2. Go into the folder:**
+```bash
 cd portfolio
 ```
 
-**2. Install dependencies:**
+**3. Install dependencies:**
 ```bash
 npm install
 ```
 
-**3. Run development server:**
+**4. Run development server:**
 ```bash
 npm run dev
 ```
 
-**4. Open in browser:**
+**5. Open in browser:**
 http://localhost:5173
 
-**5. Build for production:**
+**6. Build for production:**
 ```bash
 npm run build
 ```
@@ -75,22 +83,23 @@ npm run build
 ---
 
 ## 📁 Project Structure
-
+```
 portfolio/
 ├── src/
 │   ├── components/
-│   │   ├── Hero.jsx          # Landing section
-│   │   ├── About.jsx         # About + skills
-│   │   ├── Projects.jsx      # Project cards
-│   │   ├── Certifications.jsx # Achievements
-│   │   └── Contact.jsx       # Contact links
-│   ├── App.jsx               # Main app
-│   ├── main.jsx              # Entry point
-│   └── index.css             # Global styles
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Certifications.jsx
+│   │   └── Contact.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
 ├── public/
 ├── index.html
 ├── vite.config.js
 └── package.json
+```
 
 ---
 
@@ -98,11 +107,17 @@ portfolio/
 
 Deployed on **Vercel** — free hosting for React projects.
 
+**Option 1 — Connect GitHub (Recommended):**
+1. Go to [vercel.com](https://vercel.com)
+2. Click **"Add New Project"**
+3. Import your GitHub repo
+4. Click **Deploy** ✅
+
+**Option 2 — Manual:**
 ```bash
 npm run build
 ```
-
-Then drag `dist/` folder to [vercel.com](https://vercel.com) or connect GitHub repo!
+Then drag the `dist/` folder to [vercel.com](https://vercel.com)
 
 ---
 
