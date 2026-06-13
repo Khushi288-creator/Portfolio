@@ -9,6 +9,11 @@ import { useEffect, useState } from 'react'
 function App() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
 
+   useEffect(() => {
+    // Refresh hone pe hamesha top pe jao
+    window.scrollTo(0, 0)
+  }, [])
+  
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePos({ x: e.clientX, y: e.clientY })
