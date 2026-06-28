@@ -3,6 +3,7 @@ import { useState } from 'react'
 import ieeeMl from '../assets/IEEE Machine Learning.png'
 import deloitteData from '../assets/Deloitte_DataAnalytics.png' 
 import deloitteCyber from '../assets/Deloitte_cyber.png'
+import TXVolunteer from '../assets/TX_Volunteer.jpeg'
 import Drone from '../assets/IEEE Drone Dev Workshop.png'
 import SmartED from '../assets/IPL Prediction Bootcamp.png'
 import CCC from '../assets/CCC.jpeg'
@@ -84,6 +85,15 @@ const categories = [
     color: "text-orange-400",
     border: "border-orange-500/30",
     items: [
+     {
+        title: "TechXtreme 2026 — Volunteer",
+        desc: "Event Volunteer · Certificate of Appreciation · Inter-College Tech Fest · Gandhinagar University · Apr 2026",
+        icon: "🎖️",
+        color: "border-cyan-500",
+        glow: "hover:shadow-cyan-500/20",
+        bg: "from-cyan-900/30 to-gray-900",
+        image: TXVolunteer
+      },
       {
         title: "Cricket IMPULSO 2026 ★",
         desc: "Gandhinagar University Championship — Winners!",
