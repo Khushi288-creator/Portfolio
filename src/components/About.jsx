@@ -54,7 +54,7 @@ function About() {
             viewport={{ once: true }}
           >
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
-              I'm a 2nd year M.Sc. IT student at Gandhinagar University with a{' '}
+              I'm a 3rd year M.Sc. IT student at Gandhinagar University with a{' '}
               <span className="text-purple-400 font-semibold">9.82 CGPA</span> — consistently
               improving every semester.
             </p>
@@ -111,6 +111,70 @@ function About() {
             </div>
           </motion.div>
         </div>
+
+        {/* Education */}
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  className="mt-16"
+>
+  <h3 className="text-2xl font-bold text-center mb-10">
+    🎓 <span className="text-purple-400">Education</span>
+  </h3>
+  <div className="space-y-4 max-w-3xl mx-auto">
+    {[
+      {
+        degree: "M.Sc. IT (Integrated)",
+        institute: "Gandhinagar University",
+        year: "2024 – 2029",
+        detail: "Sem 1: 8.77 → Sem 2: 9.71 → Sem 3: 9.82 ↑ · Sem 4: 9.73",
+        badge: "3rd Year · Ongoing",
+        color: "border-purple-500",
+        bg: "from-purple-900/20 to-gray-900"
+      },
+      {
+        degree: "Higher Secondary (HSC)",
+        institute: "GSEB Board",
+        year: "2024",
+        detail: "72.43%",
+        badge: "Completed",
+        color: "border-blue-500",
+        bg: "from-blue-900/20 to-gray-900"
+      },
+      {
+        degree: "Secondary School (SSC)",
+        institute: "GSEB Board",
+        year: "2022",
+        detail: "83.33%",
+        badge: "Completed",
+        color: "border-green-500",
+        bg: "from-green-900/20 to-gray-900"
+      },
+    ].map((e, i) => (
+      <motion.div
+        key={e.degree}
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: i * 0.1 }}
+        className={`bg-linear-to-br ${e.bg} border ${e.color} rounded-2xl p-5 flex items-start gap-4`}
+      >
+        <div className="flex-1">
+          <div className="flex items-center justify-between flex-wrap gap-2">
+            <h4 className="font-bold text-white text-lg">{e.degree}</h4>
+            <span className="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">{e.year}</span>
+          </div>
+          <p className="text-purple-400 text-sm mt-1">{e.institute}</p>
+          <p className="text-gray-400 text-sm mt-2">{e.detail}</p>
+        </div>
+        <span className="text-xs bg-purple-500/20 text-purple-300 px-2 py-1 rounded-full shrink-0 border border-purple-500/30">
+          {e.badge}
+        </span>
+      </motion.div>
+    ))}
+  </div>
+</motion.div>
       </motion.div>
     </section>
   )
