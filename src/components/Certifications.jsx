@@ -7,6 +7,10 @@ import TXVolunteer from '../assets/TX_Volunteer.jpeg'
 import Drone from '../assets/IEEE Drone Dev Workshop.png'
 import SmartED from '../assets/IPL Prediction Bootcamp.png'
 import CCC from '../assets/CCC.jpeg'
+import WomenHackathon from '../assets/Women_Hackathon.png'
+import DevFusion1 from '../assets/DevFusion_Round1.png'
+import DevFusion2 from '../assets/DevFusion_Round2.png'
+import DevFusion3 from '../assets/DevFusion_Round3.png'
 import participation from '../assets/TechXtreme2K25.png'
 import CricketWinners from '../assets/Cricket_winners.jpeg'
 import DahiHandi from '../assets/DahiHandi.png'
@@ -77,6 +81,49 @@ const categories = [
         glow: "hover:shadow-pink-500/20",
         bg: "from-pink-900/30 to-gray-900",
         image: SmartED
+      },
+    ]
+  },
+  {
+    label: "🏆 Hackathons & Competitions",
+    color: "text-cyan-400",
+    border: "border-cyan-500/30",
+    items: [
+      {
+      title: "Women Who Master Hackathon",
+      desc: "Logitech × Aspire For Her · National Initiative · Unstop · 27 Jul 2026 · Empowering 100K Women",
+      icon: "👩‍💻",
+      color: "border-pink-500",
+      glow: "hover:shadow-pink-500/20",
+      bg: "from-pink-900/30 to-gray-900",
+      image: WomenHackathon
+    },
+      {
+        title: "DevFusion Round 1 — Aptitude",
+        desc: "Enginow · Team Khushi.codes · Gandhinagar University · Aptitude Round",
+        icon: "🧠",
+        color: "border-cyan-500",
+        glow: "hover:shadow-cyan-500/20",
+        bg: "from-cyan-900/30 to-gray-900",
+        image: DevFusion1
+      },
+      {
+        title: "DevFusion Round 2 — Project",
+        desc: "Enginow · Team Khushi.codes · Previous Project Submission Round",
+        icon: "💻",
+        color: "border-blue-500",
+        glow: "hover:shadow-blue-500/20",
+        bg: "from-blue-900/30 to-gray-900",
+        image: DevFusion2
+      },
+      {
+        title: "DevFusion Round 3 — Hackathon",
+        desc: "Enginow · Team Khushi.codes · Gandhinagar University · Hackathon Round",
+        icon: "🚀",
+        color: "border-indigo-500",
+        glow: "hover:shadow-indigo-500/20",
+        bg: "from-indigo-900/30 to-gray-900",
+        image: DevFusion3
       },
     ]
   },
