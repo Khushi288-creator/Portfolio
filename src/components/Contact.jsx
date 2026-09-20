@@ -12,24 +12,47 @@ function Contact() {
           <h2 className="text-4xl font-bold mb-4">
             Let's <span className="text-purple-400">Connect</span>
           </h2>
+
           <p className="text-gray-400 mb-4 text-lg">
             Open to internships & fresher roles in Full Stack Development.
           </p>
+
           <p className="text-gray-500 mb-12">
             Located in Kalol, Gandhinagar, Gujarat, India.
           </p>
 
+          {/* Social Buttons */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             {[
-              { label: "Email", href: "mailto:trivedikhushi510@gmail.com", bg: "bg-red-600 hover:bg-red-700", icon: "📧" },
-              { label: "LinkedIn", href: "https://linkedin.com/in/khushi-trivedi-485092323", bg: "bg-blue-600 hover:bg-blue-700", icon: "💼" },
-              { label: "GitHub", href: "https://github.com/Khushi288-creator", bg: "bg-gray-700 hover:bg-gray-600", icon: "🐙" },
-              { label: "Fiverr", href: "https://www.fiverr.com/s/DBpVymA", bg: "bg-green-600 hover:bg-green-700", icon: "💰" },
+              {
+                label: "Email",
+                href: "mailto:trivedikhushi510@gmail.com",
+                bg: "bg-red-600 hover:bg-red-700",
+                icon: "📧",
+              },
+              {
+                label: "LinkedIn",
+                href: "https://linkedin.com/in/khushi-trivedi-485092323",
+                bg: "bg-blue-600 hover:bg-blue-700",
+                icon: "💼",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/Khushi288-creator",
+                bg: "bg-gray-700 hover:bg-gray-600",
+                icon: "🐙",
+              },
+              {
+                label: "Fiverr",
+                href: "https://www.fiverr.com/s/DBpVymA",
+                bg: "bg-green-600 hover:bg-green-700",
+                icon: "💰",
+              },
             ].map((btn, i) => (
               <motion.a
                 key={btn.label}
                 href={btn.href}
-                target={btn.href.startsWith('mailto') ? '_self' : '_blank'}
+                target={btn.href.startsWith("mailto") ? "_self" : "_blank"}
                 rel="noreferrer"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -44,16 +67,44 @@ function Contact() {
             ))}
           </div>
 
+          {/* Resume Download */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <a
+              href="/Khushi_Trivedi_Resume.pdf"
+              download="Khushi_Trivedi_Resume.pdf"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg shadow-purple-500/20"
+            >
+              📄 Download Resume
+            </a>
+          </motion.div>
+
+          {/* Available For */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             className="border border-gray-800 rounded-2xl p-8 bg-gray-900/50"
           >
-            <p className="text-gray-400 text-sm font-mono mb-2">Currently available for</p>
+            <p className="text-gray-400 text-sm font-mono mb-2">
+              Currently available for
+            </p>
+
             <div className="flex flex-wrap gap-3 justify-center">
-              {["Full Stack Internship", "React Developer Role", "Node.js Projects", "Freelance Work"].map(tag => (
-                <span key={tag} className="bg-purple-500/10 border border-purple-500/30 text-purple-300 px-4 py-2 rounded-full text-sm">
+              {[
+                "Full Stack Internship",
+                "React Developer Role",
+                "Node.js Projects",
+                "Freelance Work",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  className="bg-purple-500/10 border border-purple-500/30 text-purple-300 px-4 py-2 rounded-full text-sm"
+                >
                   {tag}
                 </span>
               ))}
